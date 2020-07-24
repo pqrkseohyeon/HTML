@@ -1,0 +1,78 @@
+/* 외부레이아웃에는 style적용x*/
+body{
+    font-family: "맑은 고딕","고딕","굴림";    
+}
+
+header{
+    width: 80%;/* 전체괄호의 80% */
+    margin-right: auto;/* 컨텐츠에 맞춤 */
+    margin-left: auto;
+    background-color: #069;
+    padding: 10px;
+    overflow: hidden;
+    /* 내용이 들어가는데, 크기보다 내용이 많으면 넘쳐남.
+    원래크기보다 많이 들어가면 숨긴다. */
+}
+
+header nav{
+    width: 60%;
+}
+ 
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a{/* 하이퍼 링크부분 */
+    color: white;
+    text-decoration: none;
+}
+
+article{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid #333 ;
+    padding: 5px;
+    overflow: hidden;
+}
+
+article section{
+    width: 30%;
+    height: 650px;
+    float: left;/* 왼쪽부터 3개붙히기 */
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted #333;
+}
+
+section h3{
+    background: url(images/bg-note.png) no-repeat left center;
+    padding-left: 30px;
+}
+
+aside{
+    clear: both;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;/* 컨텐츠크기만큼 자동으로잡힘 */
+    padding: 10px;
+    background-color: green;
+}
+
+footer{
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border: 1px solid #333;
+}
+
