@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 문자 객체 </title>
+<script>
+	var str = "Hello Thank you good luck to you";
+	
+	document.write(str.charAt(16),"<br>");//index에 해당하는 문자 불러오기(인덱스 번호가 16번인 문자를 불러온다.)
+	document.write(str.match("luck"),"<br>")//찾을 문자열을 괄호안에 적는다.
+	document.write(str.replace("you","me"),"<br>")//찾을 문자열을 적고, 바꿀 문자열을 적어준다.
+	document.write(str.toUpperCase(),"<br>")//대문자로 바꾼다.
+	document.write(str.toLowerCase(),"<br>")//소문자로 바꾼다.
+	var t=str.split(" ");//공백을 기준으로 문자열을 나눈다.
+	document.write(t[2]);
+</script>
+</head>
+<body>
+</body>
+</html>
