@@ -7,10 +7,12 @@
 	<title>연습문제 2</title>
 	<script>
 		function addNum(a,b){
-			if(num1>num2){
-				document.write(num1+"(이)가"+num2+"보다 큽니다.");
+			if(a>b){
+				document.write(a+"(이)가"+b+"보다 큽니다.");
+			}else if(a==b){
+				document.write(a+"(이)가"+b+"랑 같습니다.");
 			}else{
-				document.write(num2+"(이)가"+num1+"보다 큽니다.");
+				document.write(b+"(이)가"+a+"보다 큽니다.");
 			}
 		}
 		var num1 = parseInt(prompt("첫 번째 숫자?"));

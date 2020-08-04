@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/0803/css/form.css">
+    <style>
+        #container{
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    clear: both;
+}
+
+.field{
+    float: left;
+    width: 100px;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 55px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+    float: left;
+    width: 350px;
+    height: 35px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.r{
+    line-height: 55px;
+}
+#buttons>li{
+    display: inline-block;
+}
+
+button{
+    width: 250px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    background: #eee;
+    font-size: 0.9em;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form>
+        <h1>회원 가입</h1>
+        <fieldset>
+            <legend>로그인 정보</legend>
+        <ul id="user-info">
+            <li>
+                <label for="user-id" class="field">아이디</label>
+                <input type="text" id="user-id" placeholder="4~8글자 입력" required onchange="checkId()">
+            </li>
+
+            <li>
+                <label for="user-pw1" class="field">비밀번호</label>
+                <input type="password" id="user-pw1" placeholder="8자 이상" required onchange="checkPw()">
+            </li>
+            <li>
+                <label for="user-pw2" class="field">비밀번호 확인</label>
+                <input type="password" id="user-pw2"  required onchange="comparePw()">
+            </li>
+        </ul>
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul id="user-info">
+                <li>
+                    <label class="field">이름</label>
+                    <input type="text" id="name" required>
+                </li>
+            <li>
+                <label for="email" class="field">메일 주소</label>
+                <input type="email" id="email" required>
+            </li>
+        <li>
+            <label class="field">연락처</label>
+            <input type="text" id="phone" required>
+        </li>
+        <li>
+            <label class="field">블로그</label>
+            <input type="text" id="blog" required>
+        </li>
+
+        </ul>
+        </fieldset>
+        <ul id="buttons">
+            <li>
+                <button type="submit" class="btn btnBlack">가입하기</button>    
+            </li>
+            <li>        
+                <button type="reset" class="btn btnGray">취소</button>
+            </li>
+        </ul>
+    </form>
+    </div>
+    <script src="js/join.js"></script>
+</body>
+</html>
